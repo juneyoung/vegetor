@@ -1,0 +1,25 @@
+{
+  "name": "vegitor-front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Shindongri/vegitor-front.git",
+  "author": "shindongri <dongri@terafunding.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^9.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "typescript": "^3.5.3"
+  }
+}
