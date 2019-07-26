@@ -1,23 +1,35 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
-import styled from 'styled-components'
+import Document, { Html, Head, Main, NextScript } from "next/document"
+import styled, { ServerStyleSheet } from "styled-components"
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const Container = styled.section`
   display: flex;
   flex-direction: column;
 `
 class MyDocument extends Document {
-  static async getInitialProps(ctx: any) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+  static async getInitialProps({ renderPage }: any) {
+    const sheet = new ServerStyleSheet()
+
+    const page = renderPage((App: any) => (props: any) =>
+      sheet.collectStyles(<App {...props} />)
+    )
+
+    const styleTags = sheet.getStyleElement()
+
+    return { ...page, styleTags }
   }
 
   render() {
+    const { styleTags }: any = this.props
+
     return (
       <Html>
-        <Head />
+        <Head>
+          <title>Vegetor</title>
+          { styleTags }
+        </Head>
         <body>
           <Container>
             <Header />

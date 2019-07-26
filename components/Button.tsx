@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const Wrapper = styled.button`
-  width: 200px;
+  width: 201px;
   height: 50px;
   background-color: #60c600;
   border-radius: 4px;
