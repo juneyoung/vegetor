@@ -1,8 +1,18 @@
 import Document, { Html, Head, Main, NextScript } from "next/document"
-import styled, { ServerStyleSheet } from "styled-components"
+import styled, { ServerStyleSheet, createGlobalStyle } from "styled-components"
 
 import Header from "../components/Header"
+import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
+
+const Global = createGlobalStyle`
+  * { font-family: sans-serif; };
+  body {
+    max-width: 1060px;
+    margin: auto;
+    background-color: #FFFFFF;
+  }
+`
 
 const Container = styled.section`
   display: flex;
@@ -28,15 +38,21 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <title>Vegetor</title>
+          <link href="//fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
+          <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+          <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
           { styleTags }
         </Head>
         <body>
           <Container>
             <Header />
+            <Navigation />
             <Main />
             <Footer />
           </Container>
+          <Global />
           <NextScript />
+          <script src="//kit.fontawesome.com/e5960a9f50.js"></script>
         </body>
       </Html>
     )

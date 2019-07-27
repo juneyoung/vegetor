@@ -1,23 +1,90 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react"
+import { NextPage } from "next"
+import styled from "styled-components"
 
-import Button from '../components/Button'
-import Card from '../components/Card'
+import Card from "../components/Card"
 
 const Container = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  align-content: flex-end;
 `
 
-const IndexPage = () => (
+const CardList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+`
+
+interface IProps {
+}
+
+const IndexPage: NextPage<IProps> = () => (
   <Container>
-    <Button>버튼</Button>
-    <Card date="2019-07-30" title="테스트" subscription="테스테스트테스트테스트테스트스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트" />
+    <CardList>
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+      <Card
+        date="2019-07-30"
+        title="테스트"
+        subscription="내용이 들어갈 자리"
+      />
+    </CardList>
   </Container>
 )
 

@@ -9,9 +9,7 @@ class Error extends React.Component {
 
   render() {
     return (
-      <p>
-        
-      </p>
+      <div>Error</div>
     )
   }
 }
