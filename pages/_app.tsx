@@ -1,6 +1,5 @@
 import React from "react"
 import App, { Container } from "next/app"
-
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }: any) {
     let pageProps = {}
@@ -17,7 +16,9 @@ class MyApp extends App {
 
     return (
       <Container>
-        <Component {...pageProps} />
+        <Component {...pageProps}>
+          <title>Vegetor</title>
+        </Component>
       </Container>
     )
   }

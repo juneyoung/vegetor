@@ -1,18 +1,12 @@
 import React from 'react'
 import { NextPage } from 'next'
-import styled from 'styled-components'
 
-import TopInfoRow from '../components/TopInfoRow'
-import ContentBox from '../components/ContentBox'
-import Location from '../components/Location'
+import { Wrap } from './event.style'
+import { IProps } from './event.spec'
 
-interface IProps {
-  id: number;
-}
-
-const Wrap = styled.div`
-  height: 100%;
-`
+import TopInfoRow from '../../components/TopInfoRow/TopInfoRow'
+import ContentBox from '../../components/ContentBox/ContentBox'
+import Location from '../../components/Location/Location'
 
 const EventPage: NextPage<IProps> = () => {
   return (

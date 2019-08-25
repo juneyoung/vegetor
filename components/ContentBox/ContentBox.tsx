@@ -1,23 +1,5 @@
 import React from "react"
-import styled from "styled-components"
-
-const Wrap = styled.div`
-  margin-top: 24px;
-  padding: 24px;
-  width: 100%;
-  display: flex;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px -1px rgba(0, 0, 0, 0.12),
-    0 1px 1px 0 rgba(0, 0, 0, 0.14);
-`
-
-const ContentList = styled.div``
-
-const ContentListItem = styled.p``
-
-const Divider = styled.div`
-  width: 100%;
-
-`
+import { Wrap, ContentList, ContentListItem, Divider } from "./ContentBox.style"
 
 const ContentBox = () => {
   return (
@@ -35,7 +17,7 @@ const ContentBox = () => {
         </ContentListItem>
 
         <Divider />
-        
+
         <ContentListItem>
           마르쉐@은 ‘장터, 시장’이라는 뜻의 프랑스어 마르쉐(marché)에 장소 앞에
           붙는 전치사 at(@)을 더해 지은 이름으로, 어디에서든 열릴 수 있는

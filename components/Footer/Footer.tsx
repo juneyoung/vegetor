@@ -1,9 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Wrap = styled.footer`
-
-`
+import { Wrap } from './Footer.style'
 
 const Footer: React.FC = () => {
   return <Wrap>Copyright </Wrap>

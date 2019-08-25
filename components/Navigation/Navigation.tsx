@@ -1,21 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import styled from "styled-components"
-
-const Wrap = styled.nav`
-  display: flex;
-  justify-content: space-around;
-  padding: 48px 0;
-`
-
-const Menu = styled.a`
-  font-family: "Righteous", sans-serif;
-  font-size: 1.8rem;
-  cursor: pointer;
-  &:hover {
-    border-bottom: 1rem solid #fff200;
-  }
-`
+import { Wrap, Menu } from "./Navigation.style"
 
 const Navigation = () => (
   <Wrap>

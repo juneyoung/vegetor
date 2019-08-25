@@ -1,9 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from "next/document"
 import styled, { ServerStyleSheet, createGlobalStyle } from "styled-components"
 
-import Header from "../components/Header"
-import Navigation from "../components/Navigation"
-import Footer from "../components/Footer"
+import Header from "../components/Header/Header"
+import Navigation from "../components/Navigation/Navigation"
+import Footer from "../components/Footer/Footer"
 
 const Global = createGlobalStyle`
   * { font-family: sans-serif; };
@@ -37,7 +37,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Vegetor</title>
           <link href="//fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
           <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
           <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />

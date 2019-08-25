@@ -2,7 +2,7 @@ import React from "react"
 import { NextPage } from "next"
 import styled from "styled-components"
 
-import Card from "../components/Card"
+import Card from "../components/Card/Card"
 
 const Container = styled.section`
 `
