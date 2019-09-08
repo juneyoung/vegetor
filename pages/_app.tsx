@@ -1,8 +1,9 @@
-import React from "react"
-import App, { Container } from "next/app"
+import React from 'react'
+
+import App, { Container } from 'next/app'
 
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }: any) {
+  static async getInitialProps ({ Component, ctx }: any) {
     let pageProps = {}
 
     if (Component.getInitialProps) {
@@ -12,7 +13,7 @@ class MyApp extends App {
     return { pageProps }
   }
 
-  render() {
+  render () {
     const { Component, pageProps } = this.props
 
     return (

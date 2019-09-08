@@ -1,6 +1,6 @@
 import React from 'react'
 import { IProps } from './Card.spec'
-import { Wrapper, Thumbnail, Content, Date, Title, Subscription } from './Card.style'
+import { Content, Date, Subscription, Thumbnail, Title, Wrapper } from './Card.style'
 
 const Card = ({ date, title, subscription }: IProps) => {
   return (

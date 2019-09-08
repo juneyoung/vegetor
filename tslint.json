@@ -4,6 +4,15 @@
         "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": {},
+    "rules": {
+        "semicolon": [false, "always"],
+        "object-literal-sort-keys": false,
+        "no-shadowed-variable": false,
+        "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+        "no-console": [false, "log", "error"],
+        "trailing-comma": false,
+        "space-before-function-paren": true,
+        "member-access": false
+    },
     "rulesDirectory": []
 }

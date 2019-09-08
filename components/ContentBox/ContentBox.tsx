@@ -1,5 +1,5 @@
-import React from "react"
-import { Wrap, ContentList, ContentListItem, Divider } from "./ContentBox.style"
+import React from 'react'
+import { ContentList, ContentListItem, Divider, Wrap } from './ContentBox.style'
 
 const ContentBox = () => {
   return (

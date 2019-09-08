@@ -1,8 +1,9 @@
-import React from "react"
-import { NextPage } from "next"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-import Card from "../components/Card/Card"
+import Card from '../components/Card/Card'
+
+import { NextPage } from 'next'
 
 const Container = styled.section`
 `
@@ -13,76 +14,13 @@ const CardList = styled.div`
   grid-gap: 24px;
 `
 
-interface IProps {
-}
-
-const IndexPage: NextPage<IProps> = () => (
+const IndexPage: NextPage = () => (
   <Container>
     <CardList>
       <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
-      />
-      <Card
-        date="2019-07-30"
-        title="테스트"
-        subscription="내용이 들어갈 자리"
+        date='2019-07-30'
+        title='테스트'
+        subscription='내용이 들어갈 자리'
       />
     </CardList>
   </Container>

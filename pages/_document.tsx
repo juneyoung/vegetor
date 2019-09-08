@@ -1,9 +1,9 @@
-import Document, { Html, Head, Main, NextScript } from "next/document"
-import styled, { ServerStyleSheet, createGlobalStyle } from "styled-components"
+import Document, { Head, Html, Main, NextScript  } from 'next/document'
+import styled, { createGlobalStyle ,ServerStyleSheet } from 'styled-components'
 
-import Header from "../components/Header/Header"
-import Navigation from "../components/Navigation/Navigation"
-import Footer from "../components/Footer/Footer"
+import Footer from '../components/Footer/Footer'
+import Header from '../components/Header/Header'
+import Navigation from '../components/Navigation/Navigation'
 
 const Global = createGlobalStyle`
   * { font-family: sans-serif; };
@@ -37,10 +37,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Righteous&display=swap" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+          <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Righteous&display=swap' />
+          <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' />
+          <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css' />
+          <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css' />
           { styleTags }
         </Head>
         <body>
@@ -52,7 +52,7 @@ class MyDocument extends Document {
           </Container>
           <Global />
           <NextScript />
-          <script src="//kit.fontawesome.com/e5960a9f50.js"></script>
+          <script src='//kit.fontawesome.com/e5960a9f50.js'></script>
         </body>
       </Html>
     )

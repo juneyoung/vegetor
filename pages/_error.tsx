@@ -1,13 +1,13 @@
-import React from "react"
+import React from 'react'
 
 class Error extends React.Component {
-  static getInitialProps({ res, err }: any) {
+  static getInitialProps ({ res, err }: any) {
     const statusCode = res ? res.statusCode : err ? err.statusCode : null
 
     return { statusCode }
   }
 
-  render() {
+  render () {
     return (
       <div>Error</div>
     )
