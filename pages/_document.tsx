@@ -37,9 +37,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link href="//fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
-          <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
-          <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+          <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Righteous&display=swap" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
           { styleTags }
         </Head>
         <body>
