@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Shindongri/vegitor-front.git",
-  "author": "shindongri <dongri@terafunding.com>",
+  "author": "shindongri <shindongri89@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "next",
@@ -11,25 +11,19 @@
     "start": "serve ./out"
   },
   "dependencies": {
-    "fp-ts": "^2.0.2",
-    "moment": "^2.24.0",
-    "next": "^9.0.1",
-    "numeral": "^2.0.6",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-slick": "^0.24.0",
-    "rxjs": "^6.5.2",
-    "slick-carousel": "^1.8.1",
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "rxjs": "^6.5.3",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@types/node": "^12.6.2",
-    "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.8.4",
-    "@types/react-slick": "^0.23.4",
-    "@types/styled-components": "^4.1.18",
+    "@types/node": "^12.7.5",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^4.1.19",
     "babel-plugin-styled-components": "^1.10.6",
-    "tslint": "^5.19.0",
-    "typescript": "^3.5.3"
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
   }
 }

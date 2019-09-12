@@ -19,7 +19,6 @@ class MyApp extends App {
     return (
       <Container>
         <Component {...pageProps}>
-          <title>Vegetor</title>
         </Component>
       </Container>
     )
