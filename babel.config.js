@@ -1,6 +1,10 @@
 module.exports = {
   "presets": [
-    "next/babel"
+    ["next/babel", {
+      "preset-env": {},
+      "transform-runtime": {},
+      "class-properties": {}
+    }]
   ],
   "plugins": [
     [
