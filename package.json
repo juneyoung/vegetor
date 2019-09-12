@@ -11,9 +11,13 @@
     "start": "serve ./out"
   },
   "dependencies": {
+    "lodash": "^4.17.15",
     "next": "^9.0.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.0.5",
     "rxjs": "^6.5.3",
     "styled-components": "^4.3.2"
   },
