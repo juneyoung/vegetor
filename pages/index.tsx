@@ -1,6 +1,7 @@
 import React from 'react'
 // import Card from '../components/Card'
 // import Button from '../components/Button'
+import { InputText } from '../components/Input'
 
 const IndexPage = () => (
   <div>
@@ -11,6 +12,8 @@ const IndexPage = () => (
     place='마로니에 공원' /> */}
 
     {/* <Button label='이벤트 주최하기' onClick={ (e) => e } /> */}
+
+    <InputText onChange={ (e) => e } />
   </div>
 )
 
