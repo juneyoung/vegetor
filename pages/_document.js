@@ -1,16 +1,38 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { createGlobalStyle, ServerStyleSheet } from 'styled-components'
 
+import Header from '../components/Header'
+
+const Global = createGlobalStyle`
+  html, body {
+    font-family: NotoSansCJKkr;
+  }
+  body {
+    margin: 0;
+  }
+`
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+  static async getInitialProps({ renderPage }) {
+    const sheet = new ServerStyleSheet()
+
+    const page = renderPage(App => props =>
+      sheet.collectStyles(<App {...props} />)
+    )
+
+    const styleTags = sheet.getStyleElement()
+
+    return { ...page, styleTags }
   }
 
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+        { this.props.styleTags }
+        </Head>
         <body>
+          <Global />
+          <Header title="VEGETOR" isLoggedIn={ true } avatarUrl="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
           <Main />
           <NextScript />
         </body>

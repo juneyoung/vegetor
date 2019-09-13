@@ -12,7 +12,8 @@
         "no-console": [false, "log", "error"],
         "trailing-comma": false,
         "space-before-function-paren": true,
-        "member-access": false
+        "member-access": false,
+        "align": [true, "statements"]
     },
     "rulesDirectory": []
 }
