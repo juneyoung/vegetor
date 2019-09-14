@@ -32,7 +32,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Global />
-          <Header title="VEGETOR" isLoggedIn={ true } avatarUrl="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+          <Header title="VEGETOR" isLoggedIn={ false } avatarUrl="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
           <Main />
           <NextScript />
         </body>
