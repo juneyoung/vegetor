@@ -12,6 +12,7 @@ export const HeaderContainer = styled.header`
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
+  z-index: 99;
 `
 
 export const HeaderHamburgerMenu = styled.img`
@@ -21,6 +22,7 @@ export const HeaderHamburgerMenu = styled.img`
 `
 
 export const HeaderTitle = styled.h1`
+  font-family: BMJUAOTF;
   align-self: stretch;
   display: flex;
   align-items: center;
@@ -40,7 +42,7 @@ export const HeaderAvatar = styled.img`
   border-radius: 50%;
 `
 
-export const HeaderLogin = styled.div`
+export const HeaderLogin = styled.a`
   align-self: stretch;
   display: flex;
   align-items: center;
@@ -52,4 +54,5 @@ export const HeaderLogin = styled.div`
   letter-spacing: normal;
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
 `

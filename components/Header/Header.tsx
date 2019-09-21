@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 
 import { IProps } from './Header.spec'
@@ -13,15 +12,12 @@ import {
 const Header = ({ title, isLoggedIn, avatarUrl }: IProps) => (
     <HeaderContainer>
         <HeaderHamburgerMenu src='/static/ic-drawer.svg' />
-        <Link href='/' prefetch>
+        <a href='/'>
             <HeaderTitle>{ title }</HeaderTitle>
-        </Link>
+        </a>
         {
-            isLoggedIn ? <HeaderAvatar src={ avatarUrl } /> : (
-                <Link href='/login' prefetch>
-                    <HeaderLogin>로그인</HeaderLogin>
-                </Link>
-            )
+            isLoggedIn ? <HeaderAvatar src={ avatarUrl } /> : <HeaderLogin href='/login'>로그인</HeaderLogin>
+
         }
     </HeaderContainer>
 )

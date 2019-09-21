@@ -30,6 +30,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
         { this.props.styleTags }
+        <title>VEGETOR</title>
         </Head>
         <body>
           <Global />
