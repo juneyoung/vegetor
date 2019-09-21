@@ -2,6 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { createGlobalStyle, ServerStyleSheet } from 'styled-components'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Global = createGlobalStyle`
   html, body {
@@ -34,6 +35,7 @@ class MyDocument extends Document {
           <Global />
           <Header title="VEGETOR" isLoggedIn={ false } avatarUrl="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
           <Main />
+          <Footer />
           <NextScript />
         </body>
       </Html>
