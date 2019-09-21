@@ -35,7 +35,6 @@ class MyDocument extends Document {
           <Global />
           <Header title="VEGETOR" isLoggedIn={ false } avatarUrl="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
           <Main />
-          <Footer />
           <NextScript />
         </body>
       </Html>

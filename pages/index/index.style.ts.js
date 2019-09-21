@@ -25,6 +25,7 @@ export const MainSectionContainer = styled.div`
 `
 
 export const MainSectionTitle = styled.h2`
+    font-family: BMJUAOTF;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 30px;
     font-weight: normal;
@@ -43,9 +44,6 @@ export const CardListWrap = styled.div`
     margin-top: 20px;
     div {
         margin-bottom: 22px;
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
 `
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-  // position: fixed;
+  position: fixed;
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
@@ -10,6 +10,8 @@ export const HeaderContainer = styled.header`
   height: 64px;
   padding: 0 16px;
   background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
 `
 
 export const HeaderHamburgerMenu = styled.img`

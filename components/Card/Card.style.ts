@@ -32,12 +32,13 @@ export const CardDate = styled.time`
 export const CardTitle = styled.h4`
     width: 100%;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.87);
 `
 
 export const CardPlace = styled.small`
