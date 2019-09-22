@@ -3,9 +3,11 @@
 import React from 'react'
 
 import HorizontalNarrator from '../../components/HorizontalNarrator'
+import ImageSlider from '../../components/ImageSlider'
 
 const EventViewPage = ({ }) => (
     <div>
+        <ImageSlider />
         <HorizontalNarrator />
     </div>
 )

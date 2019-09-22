@@ -1,19 +1,24 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { createGlobalStyle, ServerStyleSheet } from 'styled-components'
-import reset from 'styled-reset'
-// import 'slick-carousel/slick/slick.css'
-// import 'slick-carousel/slick/slick-theme.css'
+import reset from 'styled-reset';
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 const Global = createGlobalStyle`
-  ${reset};
+  ${ reset }
   html, body {
     font-family: NotoSansCJKkr;
   }
   body {
     margin: 0;
+    .slick-dots .slick-active button:before {
+        color: #1bcd92;
+    }
+    .slick-dots li button:before {
+        color: #ffffff;
+    }
+    
   }
 `
 class MyDocument extends Document {
@@ -34,6 +39,8 @@ class MyDocument extends Document {
       <Html>
         <Head>
         { this.props.styleTags }
+        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         <title>VEGETOR</title>
         </Head>
         <body>
