@@ -8,9 +8,7 @@ export const CardWrap = styled.div`
 `
 
 export const CardContainer = styled.div`
-    padding: 12px 12px 16px 12px;
-    width: 100%;
-    height: 100%;
+    padding: 16px;
     box-sizing: border-box;
 `
 
@@ -21,32 +19,20 @@ export const CardThumbnail = styled.img`
 
 export const CardDate = styled.time`
     font-size: 12px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #199a64;
+    color: #1bcd78;
 `
 
 export const CardTitle = styled.h4`
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.87);
+    margin: 8px 0;
+    text-align: justify;
 `
 
 export const CardPlace = styled.small`
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    font-size: 12px;
     color: rgba(0, 0, 0, 0.6);
 `

@@ -19,8 +19,9 @@ export const MainSectionWrap = styled.div`
 `
 
 export const MainSectionContainer = styled.div`
-    width: 328px;
+    width: 100%;
     height: 100%;
+    margin: 0 16px;
     position: relative;
 `
 
@@ -34,10 +35,8 @@ export const MainSectionTitle = styled.h2`
     line-height: 1.27;
     letter-spacing: normal;
     color: #ffffff;
-    position: absolute;
-    top: 30%;
-    left: 0;
     white-space: nowrap;
+    padding-top: 142px;
 `
 
 export const CardListWrap = styled.div`
@@ -52,6 +51,5 @@ export const ButtonWrap = styled.div`
     height: 48px;
     position: absolute;
     bottom: 16px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 0;
 `

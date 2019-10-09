@@ -15,6 +15,9 @@ const Global = createGlobalStyle`
   body {
     margin: 0;
   }
+  a {
+    text-decoration: none;
+  }
 `
 class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
