@@ -9,9 +9,6 @@ export const HeaderContainer = styled.header`
   height: 64px;
   padding: 0 16px;
   background-color: rgba(0, 0, 0, 0.3);
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
   z-index: 99;
 `
 

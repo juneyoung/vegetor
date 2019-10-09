@@ -1,4 +1,3 @@
-// import ImageSlider from './ImageSlider'
-//
-// export default ImageSlider
-export {}
+import ImageSlider from './ImageSlider'
+
+export default ImageSlider
