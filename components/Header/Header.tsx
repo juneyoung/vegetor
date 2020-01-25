@@ -1,25 +1,65 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+import styled from 'styled-components';
 
-import { IProps } from './Header.spec'
-import {
-  HeaderAvatar,
-  HeaderContainer,
-  HeaderHamburgerMenu,
-  HeaderLogin,
-  HeaderTitle,
-} from './Header.style'
+interface IProps {
+    type: string;
+    title: string;
+    isLoggedIn: boolean;
+    avatarUrl: string;
+}
 
-const Header = ({ title, isLoggedIn, avatarUrl }: IProps) => (
-    <HeaderContainer>
-        <HeaderHamburgerMenu src='/static/ic-drawer.svg' />
+const Container = styled.header`
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding: 0 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  positon: fixed;
+  top: 0;
+  z-index: 99;
+`
+
+const HamburgerMenu = styled.img`
+  min-width: 26px;
+  max-height: 26px;
+  cursor: pointer;
+`
+
+const Title = styled.h1`
+  font-family: BMJUAOTF;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+`
+
+const Avatar = styled.img`
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+`
+
+const Link = styled.a`
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+`
+
+const Header: FunctionComponent<IProps> = ({ title, isLoggedIn, avatarUrl }) => (
+    <Container>
+        <HamburgerMenu src='/static/ic-drawer.svg' />
         <a href='/'>
-            <HeaderTitle>{ title }</HeaderTitle>
+            <Title>{ title }</Title>
         </a>
         {
-            isLoggedIn ? <HeaderAvatar src={ avatarUrl } /> : <HeaderLogin href='/login'>로그인</HeaderLogin>
-
+            isLoggedIn ? <Avatar src={ avatarUrl } /> : <Link href='/login'>로그인</Link>
         }
-    </HeaderContainer>
+    </Container>
 )
 
 export default Header

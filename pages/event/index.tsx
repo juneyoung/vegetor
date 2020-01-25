@@ -1,6 +1,7 @@
 import React from 'react'
+import { NextPage } from 'next'
 
-const EventPage = () => (
+const EventPage: NextPage = () => (
     <div></div>
 )
 

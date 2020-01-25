@@ -1,13 +1,13 @@
-// import axios from 'axios'
-// import { NextPageContext } from 'next'
 import React from 'react'
+import { NextPage } from 'next'
+import styled from 'styled-components';
 
 import HorizontalNarrator from '../../components/HorizontalNarrator'
 import ImageSlider from '../../components/ImageSlider'
 
-import { EventViewWrap } from './view.style'
+const EventViewWrap = styled.div``
 
-const EventViewPage = () => {
+const EventViewPage: NextPage = () => {
     return (
         <EventViewWrap>
             <ImageSlider />
@@ -15,11 +15,5 @@ const EventViewPage = () => {
         </EventViewWrap>
     )
 }
-
-// EventViewPage.getInitialProps = async ({ query }: NextPageContext) => {
-//     const { } = await axios.get(`id=${ query.id }`)
-//
-//     return { id: query.id }
-// }
 
 export default EventViewPage

@@ -1,9 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { createGlobalStyle, ServerStyleSheet } from 'styled-components'
-import reset from 'styled-reset';
+import reset from 'styled-reset'
 
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 
 const Global = createGlobalStyle`
   ${ reset }
@@ -24,6 +23,7 @@ const Global = createGlobalStyle`
     text-decoration: none;
   }
 `
+
 class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()

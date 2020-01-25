@@ -1,5 +1,14 @@
 import React from 'react'
-import { FooterContainer, FooterWrap } from './Footer.style'
+import styled from 'styled-components';
+
+const FooterWrap = styled.footer`
+    margin-top: 35px;
+    width: 100%;
+    height: 100%;
+`
+
+const FooterContainer = styled.div`
+`
 
 const Footer = () => {
     return (
