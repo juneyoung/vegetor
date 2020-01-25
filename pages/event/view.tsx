@@ -5,12 +5,16 @@ import React from 'react'
 import HorizontalNarrator from '../../components/HorizontalNarrator'
 import ImageSlider from '../../components/ImageSlider'
 
-const EventViewPage = ({ }) => (
-    <div>
-        <ImageSlider />
-        <HorizontalNarrator />
-    </div>
-)
+import { EventViewWrap } from './view.style'
+
+const EventViewPage = () => {
+    return (
+        <EventViewWrap>
+            <ImageSlider />
+            <HorizontalNarrator />
+        </EventViewWrap>
+    )
+}
 
 // EventViewPage.getInitialProps = async ({ query }: NextPageContext) => {
 //     const { } = await axios.get(`id=${ query.id }`)
